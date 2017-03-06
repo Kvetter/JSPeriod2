@@ -1,0 +1,25 @@
+<h2>Random joke</h2>
+<ul>
+  <li>
+    {{randomJoke}}
+  </li>
+</ul>
+
+<h2>All jokes</h2>
+<ul>
+  {{#each allJokes}}
+  <li>
+    {{this}}
+  </li>
+  {{/each}}
+</ul>
+
+<h2>Add Joke</h2>
+
+<div style="width=100%;margin-top:10px;">
+  <form method="post" id="nameform">
+    <label>Add Joke</label>
+    <input name="joke">
+    <input type="submit">
+  </form>
+</div>
